@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menuItemOperationAdd"
+        android:icon="@android:drawable/ic_input_add"
+        android:title=""
+        android:showAsAction="always">
+    </item>
+    <item
+        android:id="@+id/menuItemOperationSave"
+        android:icon="@android:drawable/presence_online"
+        android:title=""
+        android:showAsAction="always">
+    </item>
+    <item
+        android:id="@+id/menuOperation"
+        android:icon="@android:drawable/ic_menu_sort_by_size"
+        android:title="Overflow"
+        android:showAsAction="always">
+        <menu>
+            <item
+                android:id="@+id/menuItemOperationSelect"
+                android:title="Select">
+            </item>
+        </menu>
+    </item>
+</menu>

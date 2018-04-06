@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+        android:id="@+id/linearLayoutNEOperationAllViews"
+        android:layout_marginTop="5dp">
+
+        <View
+            android:layout_width="match_parent"
+            android:background="@android:color/darker_gray"
+            android:layout_height="1dp"
+            android:id="@+id/view" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_std"
+            android:padding="2dp">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:layout_margin="2dp">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:tag="Code">
+
+                    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent"
+                                  android:layout_height="match_parent">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                  android:text="@string/code" />
+                        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                                  android:id="@+id/textViewNEOperationCodeValue"
+                            android:gravity="right" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:background="@android:color/darker_gray"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="2dp">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:tag="AmountIn">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                  android:text="@string/amount_in"
+                            android:layout_alignParentLeft="false" />
+
+                        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                                  android:text="0" android:id="@+id/textViewNEOperationAmountInValue"
+                            android:layout_alignParentRight="false"
+                            android:layout_weight="1"
+                            android:gravity="right" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:tag="AmountOut">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                  android:text="@string/amount_out"
+                            android:layout_alignParentLeft="true"/>
+
+                        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="0"
+                                  android:id="@+id/textViewNEOperationAmountOutValue"
+                            android:layout_alignParentRight="true"
+                            android:gravity="right" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:background="@android:color/darker_gray"
+            android:layout_height="1dp" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_std"
+            android:padding="2dp">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:tag="Qtty">
+
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                              android:text="@string/qtty"
+                        android:gravity="center_horizontal" />
+                    <EditText android:layout_width="match_parent" android:layout_height="wrap_content"
+                              android:id="@+id/editTextNEOperationQtty"
+                        android:numeric="decimal" android:singleLine="true" android:selectAllOnFocus="true"
+                        android:gravity="center_horizontal"
+                        android:hint="0"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:background="@android:color/darker_gray"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.1"
+                android:tag="Measure">
+
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent"
+                              android:layout_height="match_parent"
+                    android:layout_weight="1">
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                              android:text="@string/measure1"
+                        android:gravity="center_horizontal" />
+                    <Spinner android:layout_width="match_parent" android:layout_height="wrap_content"
+                             android:id="@+id/spinnerNEOperationMeasure" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:background="@android:color/darker_gray"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:id="@+id/view10" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:tag="RealQtty">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/real_qtty"
+                        android:gravity="center_horizontal" />
+
+                    <TextView
+                        android:text="0"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/textViewNEOperationRealQtty"
+                        android:gravity="bottom|center_horizontal" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:background="@android:color/darker_gray"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_weight="1.1"
+                android:tag="Currency"
+                android:layout_height="match_parent">
+
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                              android:text="@string/currency"
+                        android:gravity="center_horizontal" />
+                    <Spinner android:layout_width="match_parent" android:layout_height="wrap_content"
+                             android:id="@+id/spinnerNEOperationCurrency" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_std"
+            android:padding="2dp">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:tag="PriceIn">
+
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                              android:text="@string/price_in"
+                        android:gravity="center_horizontal" />
+                    <EditText android:layout_width="match_parent" android:layout_height="wrap_content"
+                              android:id="@+id/editTextNEOperationPriceIn"
+                        android:numeric="decimal"
+                              android:singleLine="true" android:selectAllOnFocus="true"
+                        android:gravity="center_horizontal"
+                        android:hint="0"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:background="@android:color/darker_gray"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.1"
+                android:tag="Percent">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/percent"
+                        android:gravity="center_horizontal" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/editTextNEOperationPercent"
+                        android:numeric="decimal"
+                        android:singleLine="true"
+                        android:selectAllOnFocus="true"
+                        android:gravity="center_horizontal"
+                        android:hint="0"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:background="@android:color/darker_gray"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:tag="PriceOut"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/price_out"
+                        android:gravity="center_horizontal" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/editTextNEOperationPriceOut"
+                        android:singleLine="true"
+                        android:selectAllOnFocus="true"
+                        android:numeric="decimal"
+                        android:gravity="center_horizontal"
+                        android:hint="0"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:background="@android:color/darker_gray"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_weight="1.1"
+                android:tag="Discount"
+                android:layout_height="wrap_content">
+
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                              android:text="@string/discount"
+                        android:gravity="center_horizontal" />
+                    <EditText android:layout_width="match_parent" android:layout_height="wrap_content"
+                              android:id="@+id/editTextNEOperationDiscount"
+                        android:singleLine="true" android:selectAllOnFocus="true" android:numeric="decimal"
+                        android:gravity="center_horizontal"
+                        android:hint="0"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray" />
+
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+            android:tag="Description">
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:text="@string/description"
+                android:gravity="center_horizontal" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:id="@+id/textViewNEOperationDescription"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

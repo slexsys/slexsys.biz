@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">slexsys.biz</string>
+    <string name="cancel">Ելք</string>
+    <string name="exit_without_save">Դուրս գալ առանց պահպանելու</string>
+    <string name="ne_operation">Մուտքագրեք տվյալները</string>
+    <string name="operation_save_problem">Գործողության պահպանման ժամանակ սխալ</string>
+    <string name="operation_save_successfully">Գործողությունը պահպանվել է բարեհաջող</string>
+    <string name="payments">Վճարում</string>
+    <string name="save_operation">Պահպանել գործողությունը</string>
+</resources>

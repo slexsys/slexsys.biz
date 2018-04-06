@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <ImageView
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:id="@+id/imageView" android:background="@android:drawable/ic_dialog_dialer"
+                android:visibility="gone"/>
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="New Text"
+                        android:id="@+id/textViewLine1"
+                    android:paddingLeft="5dp"
+                        android:paddingTop="2dp" android:textStyle="bold" android:singleLine="true"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:text="Te"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textViewListItemSelection"
+                    android:layout_alignEnd="@+id/textViewLine1"
+                    android:textColor="@android:color/holo_orange_dark"
+                    android:background="@drawable/shapetoolbar"
+                    android:visibility="gone"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="3dp"
+                    android:textSize="1sp" />
+
+            </RelativeLayout>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="New Text"
+                    android:id="@+id/textViewLine2"
+                android:paddingLeft="5dp"
+                    android:paddingTop="1dp" android:textColor="#0bff4f" android:singleLine="true"
+                android:textSize="12dp" />
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:paddingLeft="5dp" android:paddingTop="1dp">
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="New Text"
+                        android:id="@+id/textViewLine3" android:layout_weight="1"
+                    android:textColor="#051dff" android:singleLine="true"
+                    android:textSize="12dp" />
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="New Text 555"
+                        android:id="@+id/textViewLine4"
+                    android:textColor="#ff0817"
+                        android:singleLine="true"
+                    android:textSize="12dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/scrollViewNEObject">
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent"
+                          android:layout_height="wrap_content">
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/code"
+                    android:layout_weight="3.5"/>
+                <EditText android:layout_width="match_parent" android:layout_height="wrap_content"
+                          android:id="@+id/editTextNEObjectCode" android:layout_weight="3.1" android:singleLine="true"
+                          android:selectAllOnFocus="true"
+                    android:hint="Code" />
+                <Switch android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:id="@+id/switchNEObjectActive" android:layout_alignWithParentIfMissing="false"
+                        android:layout_alignParentBottom="false" android:checked="true" android:enabled="true"
+                        android:layout_weight="4"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent"
+                              android:layout_height="wrap_content">
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/name"
+                    android:layout_weight="2"/>
+                <EditText android:layout_width="match_parent" android:layout_height="wrap_content"
+                          android:id="@+id/editTextNEObjectName" android:layout_weight="1" android:singleLine="true"
+                          android:selectAllOnFocus="true"
+                    android:hint="Name" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent"
+                              android:layout_height="wrap_content">
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                          android:text="@string/price_group"
+                    android:layout_weight="2"/>
+                <Spinner android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/spinnerNEObjectPriceGroup"
+                         android:layout_weight="1"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

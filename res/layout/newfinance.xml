@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <ViewFlipper
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/viewFlipperNEFinance">
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent"
+                              android:layout_height="wrap_content">
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/total"
+                        android:layout_weight="2"/>
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                              android:id="@+id/textViewNEFinanceTotalValue" android:layout_weight="1"
+                              android:text="0"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent"
+                                          android:layout_height="wrap_content">
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/pay"
+                        android:layout_weight="2"/>
+                    <EditText android:layout_width="match_parent" android:layout_height="wrap_content"
+                              android:id="@+id/editTextNEFinancePay" android:layout_weight="1" android:numeric="decimal"
+                              android:singleLine="true" android:selectAllOnFocus="true"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent"
+                                          android:layout_height="wrap_content">
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/balance"
+                        android:layout_weight="2"/>
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                              android:id="@+id/textViewNEFinanceBalanceValue" android:layout_weight="1"
+                              android:text="0"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent"
+                                          android:layout_height="wrap_content">
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/type"
+                        android:layout_weight="2"/>
+                    <Spinner android:layout_width="match_parent" android:layout_height="wrap_content"
+                             android:id="@+id/spinnerNEFinanceType" android:layout_weight="1"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent"
+                                          android:layout_height="wrap_content">
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/credit_before"
+                        android:layout_weight="2"/>
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                              android:id="@+id/textViewNEFinanceCreditBeforeValue" android:layout_weight="1"
+                              android:text="0"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent"
+                                          android:layout_height="wrap_content">
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/credit_after"
+                        android:layout_weight="2"/>
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                              android:id="@+id/textViewNEFinanceCreditAfterValue" android:layout_weight="1"
+                              android:text="0"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                    <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                        <DatePicker
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/datePickerNEFinanceDate" android:layout_gravity="center_horizontal" android:calendarViewShown="false"/>
+                    </LinearLayout>
+                    <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/print_items_list"
+                            android:layout_weight="0.333"/>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/print_payments"
+                            android:layout_weight="0.333"/>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/print_real_qtty"
+                            android:layout_weight="0.333"/>
+                    </LinearLayout>
+                    <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                        <Switch
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/switchNEFinancePrintItemsList" android:layout_weight="0.333"/>
+                        <Switch android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                android:id="@+id/switchNEFinancePrintPayments" android:layout_weight="0.333"/>
+                        <Switch android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                android:id="@+id/switchNEFinancePrintRealQtty" android:layout_weight="0.333"/>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent"
+                                  android:layout_height="wrap_content">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                  android:text="Print PriceIn"
+                            android:layout_weight="0.333"/>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                  android:text="Print PriceOut"
+                            android:layout_weight="0.333"/>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                  android:text="@string/print_price_in_out"
+                            android:layout_weight="0.333"/>
+                    </LinearLayout>
+                    <RelativeLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                        <NumberPicker android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                      android:id="@+id/numberPickerNEFinancePrintPriceIn" android:layout_alignParentLeft="true"/>
+                        <NumberPicker android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                      android:id="@+id/numberPickerNEFinancePrintPriceOut" android:layout_centerHorizontal="true"/>
+                        <NumberPicker android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                      android:id="@+id/numberPickerNEFinancePrintPriceInOut" android:layout_alignParentRight="true"/>
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ViewFlipper>
+    </RelativeLayout>
+</LinearLayout>

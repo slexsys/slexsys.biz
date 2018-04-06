@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menuItemNEItemSave"
+        android:icon="@android:drawable/presence_online"
+        android:title=""
+        android:showAsAction="always">
+    </item>
+    <item
+        android:id="@+id/menuNEItem"
+        android:icon="@android:drawable/ic_menu_sort_by_size"
+        android:title="Overflow"
+        android:showAsAction="always">
+        <menu>
+            <item
+                android:id="@+id/menuItemNEItemCodeAuto"
+                android:checkable="true"
+                android:checked="true"
+                android:title="Code Auto">
+            </item>
+        </menu>
+    </item>
+</menu>

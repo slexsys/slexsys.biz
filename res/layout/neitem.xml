@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/scrollViewNEItem">
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent"
+                          android:layout_height="wrap_content">
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/code"
+                    android:layout_weight="3.5"/>
+                <EditText android:layout_width="match_parent" android:layout_height="wrap_content"
+                          android:id="@+id/editTextNEItemCode" android:layout_weight="3.05" android:singleLine="true"
+                          android:selectAllOnFocus="true"/>
+                <Switch android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/switchNEItemActive"
+                        android:layout_alignWithParentIfMissing="false" android:layout_alignParentBottom="false"
+                        android:checked="true" android:enabled="true" android:layout_weight="4"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent"
+                      android:layout_height="wrap_content">
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/name"
+                    android:layout_weight="2"/>
+                <EditText android:layout_width="match_parent" android:layout_height="wrap_content"
+                          android:id="@+id/editTextNEItemName" android:layout_weight="1" android:singleLine="true"
+                          android:selectAllOnFocus="true"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent"
+                      android:layout_height="wrap_content">
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/barcode"
+                    android:layout_weight="3.5"/>
+                <EditText android:layout_width="match_parent" android:layout_height="wrap_content"
+                          android:id="@+id/editTextNEItemBarcode" android:layout_weight="2.15" android:singleLine="true"
+                          android:selectAllOnFocus="true"/>
+                <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=">"
+                        android:id="@+id/buttonNEItemBarcode" android:layout_weight="4.8"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent"
+                      android:layout_height="wrap_content">
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/price_in"
+                    android:layout_weight="3.5"/>
+                <EditText android:layout_width="match_parent" android:layout_height="wrap_content"
+                          android:id="@+id/editTextPriceIn" android:layout_weight="2.15" android:numeric="decimal"
+                          android:singleLine="true" android:selectAllOnFocus="true"/>
+                <Button android:layout_width="match_parent" android:layout_height="wrap_content" android:text=">"
+                        android:id="@+id/buttonNEItemPriceIn" android:layout_weight="4.8"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent"
+                      android:layout_height="wrap_content">
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/price_out"
+                    android:layout_weight="3.5"/>
+                <EditText android:layout_width="match_parent" android:layout_height="wrap_content"
+                          android:id="@+id/editTextNEItemPriceOut" android:layout_weight="2.15"
+                          android:singleLine="true" android:selectAllOnFocus="true" android:numeric="decimal"/>
+                <Button android:layout_width="match_parent" android:layout_height="wrap_content" android:text=">"
+                        android:id="@+id/buttonNEItemPriceOut" android:layout_weight="4.8"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent"
+                      android:layout_height="wrap_content">
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/measure1"
+                    android:layout_weight="0.2"/>
+                <Spinner android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/spinnerNEItemMeasure"
+                         android:layout_weight="0.2"/>
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/plu"
+                    android:layout_weight="0.26" android:visibility="invisible"/>
+                <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/editTextNEItemPLU" android:layout_weight="0.23" android:visibility="invisible"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent"
+                          android:layout_height="wrap_content">
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/catalog"
+                    android:layout_weight="3.5"/>
+                <EditText android:layout_width="match_parent" android:layout_height="wrap_content"
+                          android:id="@+id/editTextNEItemCatalog" android:layout_weight="2.15" android:singleLine="true"
+                          android:selectAllOnFocus="true"/>
+                <Button android:layout_width="match_parent" android:layout_height="wrap_content" android:text=">"
+                        android:id="@+id/buttonNEItemCatalog" android:layout_weight="4.8"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent"
+                          android:layout_height="wrap_content">
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                          android:text="@string/barcode_2"
+                    android:layout_weight="3.5"/>
+                <EditText android:layout_width="match_parent" android:layout_height="wrap_content"
+                          android:id="@+id/editTextNEItemBarcode2" android:layout_weight="2.15" android:singleLine="true"
+                          android:selectAllOnFocus="true"/>
+                <Button android:layout_width="match_parent" android:layout_height="wrap_content" android:text=">"
+                        android:id="@+id/buttonNEItemBarcode2" android:layout_weight="4.8"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent"
+                          android:layout_height="wrap_content">
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                          android:text="@string/measuer2"
+                    android:layout_weight="2"/>
+                <Spinner android:layout_width="match_parent" android:layout_height="wrap_content"
+                         android:id="@+id/spinnerNEItemMeasure2" android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent"
+                          android:layout_height="wrap_content">
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/ratio"
+                    android:layout_weight="2"/>
+                <EditText android:layout_width="match_parent" android:layout_height="wrap_content"
+                          android:id="@+id/editTextNEItemRatio" android:layout_weight="1" android:singleLine="true"
+                          android:selectAllOnFocus="true" android:numeric="decimal"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent"
+                          android:layout_height="wrap_content">
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/min_qtty"
+                    android:layout_weight="2"/>
+                <EditText android:layout_width="match_parent" android:layout_height="wrap_content"
+                          android:id="@+id/editTextNEItemMinimalQtty" android:layout_weight="1" android:numeric="decimal"
+                          android:singleLine="true" android:selectAllOnFocus="true"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent"
+                      android:layout_height="wrap_content">
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/nom_qtty"
+                    android:layout_weight="2"/>
+                <EditText android:layout_width="match_parent" android:layout_height="wrap_content"
+                          android:id="@+id/editTextNEItemNominalQtty" android:layout_weight="1" android:numeric="decimal"
+                          android:singleLine="true" android:selectAllOnFocus="true"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent"
+                          android:layout_height="wrap_content">
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/description"
+                    android:layout_weight="2"/>
+                <EditText android:layout_width="match_parent" android:layout_height="wrap_content"
+                          android:id="@+id/editTextNEItemDescription" android:layout_weight="1" android:singleLine="true"
+                          android:selectAllOnFocus="true"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent"
+                      android:layout_height="wrap_content">
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                          android:text="@string/tax_group"
+                    android:layout_weight="2"/>
+                <Spinner android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/spinnerNEItemTaxGroup"
+                         android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent"
+                      android:layout_height="wrap_content">
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/type"
+                    android:layout_weight="2"/>
+                <Spinner android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/spinnerNEItemType"
+                         android:layout_weight="1"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
